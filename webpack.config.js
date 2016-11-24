@@ -17,7 +17,7 @@ module.exports = {
       loader: 'style-loader!css-loader!sass-loader'
     }, {
       test: /\.jade$/,
-      loader: 'pug'
+      loader: 'pug-loader'
     }]
   }
 };
