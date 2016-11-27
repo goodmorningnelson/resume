@@ -1,3 +1,5 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
   //define entry point
   entry: './src/app.js',
@@ -16,8 +18,16 @@ module.exports = {
       test: /\.scss$/,
       loader: 'style-loader!css-loader!sass-loader'
     }, {
-      test: /\.jade$/,
+      test: /\.pug$/,
       loader: 'pug-loader'
+    }, {
+      test: /\.html$/,
+      loader: 'file-loader?name=[path][name].[ext]!extract-loader!html-loader'
     }]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+
+    })
+  ]
 };
