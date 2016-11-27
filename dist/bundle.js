@@ -90,7 +90,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: blue; }\n  body .header {\n    width: 100vw;\n    height: 300px;\n    background: yellow;\n    position: relative; }\n    body .header:after {\n      content: 'Good Morning Nelson';\n      position: absolute;\n      top: 50%;\n      left: 50%;\n      transform: translate(-50%, -50%);\n      font-family: arial;\n      font-weight: bold;\n      font-size: 40px;\n      color: blue; }\n", ""]);
+	exports.push([module.id, "* {\n  -webkit-box-sizing: border-box;\n  -moz-box-sizing: border-box;\n  box-sizing: border-box; }\n\nhtml {\n  width: 100%;\n  height: 100%;\n  border: 0;\n  margin: 0; }\n  html body {\n    width: 100%;\n    height: 100%;\n    border: 0;\n    margin: 0;\n    background-color: #fff; }\n    html body .header {\n      width: 100vw;\n      height: 300px;\n      background: yellow;\n      position: relative; }\n", ""]);
 
 	// exports
 
